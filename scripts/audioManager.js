@@ -1,6 +1,6 @@
-const placeStoneUrl = "../assets/audio/placeStone.mp3"
-const victoryMusic = new Audio("../assets/audio/victoryMusic.mp3")
-const placeStoneSound = new Audio("../assets/audio/placeStone.mp3")
+const placeStoneUrl = "./assets/audio/placeStone.mp3"
+const victoryMusic = new Audio("./assets/audio/victoryMusic.mp3")
+const placeStoneSound = new Audio("./assets/audio/placeStone.mp3")
 
 const buttonMute = document.getElementById("btn-mute")
 

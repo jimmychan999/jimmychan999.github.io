@@ -18,7 +18,7 @@ function initTheme() {
 
 function setTheme(theme) {
     localStorage.setItem("theme", theme);
-    document.getElementById("theme-switcher").href = "../css/themes/" + theme + ".css";
+    document.getElementById("theme-switcher").href = "./css/themes/" + theme + ".css";
 }
 
 function changeTheme() {
