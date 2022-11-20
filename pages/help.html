@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Go Bang</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" id="theme-switcher" href="../css/themes/light.css">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body onload="onloadHelp()">
+    <div id="container">
+        <div id="nav-bar">
+            <!-- Navigation bar that follows the screen down, always showing-->
+            <div id="main-logo" onclick="goToMainMenu()">
+                <!-- <div id="logo" class="tile-div"></div> -->
+                <div id="logo-text">Go Bang</div>
+            </div>
+
+            <div id="nav-menu">
+                <div class="nav-menu-items">
+                    <a href="./index.html">Play</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./help.html">Help</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./settings.html">Settings</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./about.html">About</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="body">
+            <h1>1 Introduction</h1>
+            <p>
+                Gomoku, also called Five in a Row (Chinese: "五子棋"，"五目", 
+                etc.), is an abstract strategy board game. It is traditionally 
+                played by two players with Go pieces (black and white stones) 
+                on a Go board. 
+                <br><br>
+                It is played using a 15×15 board, while in the past a 19×19 
+                board was standard. The game is known in several countries 
+                under different names.
+                <br><br>
+                Players alternate turns placing a stone of their color on an 
+                empty intersection. Black plays first. The winner is the first 
+                player to form an unbroken chain of five stones horizontally, 
+                vertically, or diagonally. 
+            </p>
+            <h1>2 First Player Advantage</h1>
+            <p>
+                It has been proven that the first player can force a win, to 
+                mitigate this imbalance, professional games have adopted extra 
+                rules. Since 2009, championships have adopted the "swap2"
+                opening rule. 
+            </p>
+            <h1>3 Opening Rules</h1>
+            <h2>3.1 Pro</h2>
+            <p>
+                The Pro opening rule has been previously adopted in
+                championships, but was dropped after being deemed too 
+                unbalanced.
+                <br><br>
+                The first player's first stone must be placed in the center of 
+                the board. The second player's first stone may be placed 
+                anywhere on the board. The first player's second stone must be 
+                placed at least three intersections away from the first stone 
+                (two empty intersections in between the two stones).
+            </p>
+            <h2>3.2 Swap2</h2>
+            <p>
+                The first player places three stones on the board,
+                two black and one white. The second player then has
+                three options:
+            </p>
+            <ol>
+                <li>They can choose to play as black</li>
+                <li>They can choose to play as white and place a second white 
+                    stone</li>
+                <li>Or they can place two more stones, one black and one white,
+                    and pass the choice of which color to play back to the 
+                    first player.</li>
+            </ol>
+            <p>
+                Because the first player doesn't know where the
+                second player will place the additional stones if
+                they take option 2 or 3, the swap2 opening protocol limits
+                excessive studying of a line by only one of the players.
+            </p>
+            <h1>4 Variants</h1>
+            <h2>4.1 Freestyle</h2>
+
+            <h2>4.2 Renju</h2>
+            <p>
+                It is played on a 15×15 board, with the rules of three and three, 
+                four and four, and overlines applied to Black only.
+
+                Renju also makes use of various tournament opening rules, such
+                as Soosõrv-8, the current international standard for this
+                variant.
+            </p>
+
+            <h1>5 Rules</h1>
+            <ul>
+                <li>
+                    <strong>Overlines:</strong> prevent a player from winning if they form a line
+                    of 6 or more stones.
+                </li>
+                <li>
+                    <strong>Three and three:</strong> bans a move that simultaneously forms two
+                    open rows of three stones (rows not blocked by an opponent's
+                    stone at either end).
+                </li>
+                <li>
+                    <strong>Four and four:</strong> bans a move that simultaneously forms two
+                    rows of four stones (open or not).
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Name of the creator of the page, copyright and last edited -->
+        <div id="footer-container">
+            <div id="footer-line"></div> 
+            <div id="footer">
+                <p>
+                    Copyrights reserved. 2021 &copy;<br>
+                </p>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/jimmychan999/GoBangGame">GitHub</a>
+            </div>
+        </div>
+    </div>
+        
+    <!-- scripts -->
+    <script type="text/javascript" src="../scripts/main.js"></script>
+    <script type="text/javascript" src="../scripts/themeManager.js"></script>
+</body>
+</html>

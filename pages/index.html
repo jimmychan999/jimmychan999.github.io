@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Go Bang</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" id="theme-switcher" href="../css/themes/light.css">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="onLoad()">
+    <div id="container">
+        <div id="nav-bar">
+            <!-- Navigation bar that follows the screen down, always showing-->
+            <div id="main-logo" onclick="goToMainMenu()">
+                <!-- <div id="logo" class="tile-div"></div> -->
+                <div id="logo-text">Go Bang</div>
+            </div>
+
+            <div id="nav-menu">
+                <div class="nav-menu-items">
+                    <a href="./index.html">Play</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./help.html">Help</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./settings.html">Settings</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./about.html">About</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="body">
+            <!-- <div id="header">
+                <div id="main-title">
+                    <h1>Go Bang</h1>
+                </div>
+            </div> -->
+            <div id="game-body">
+                <div id="top-panel">
+                    <div id="top-panel-left" class="top-panel-item">
+                        <div id="left-timer" class="timer">
+                            <div id="left-timer-text" class="timer-text">
+                                <p id="left-timer-text-p">00:00</p> 
+                            </div>
+                            <div class="timer-stone-container">
+                                <div id="left-timer-stone" class="timer-stone">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="top-panel-center" class="top-panel-item">
+                        <button id="btn-start-game" onclick="startGameBtnClick()">Start game</button>
+                        <!-- <button id="btn-end-game" disabled onclick="endGameBtnClick()">End game</button> -->
+                    </div>
+                    <div id="top-panel-right" class="top-panel-item">
+                        <div id="right-timer" class="timer">
+                            <div class="timer-stone-container">
+                                <div id="right-timer-stone" class="timer-stone">
+                                    
+                                </div>
+                            </div>
+                            <div id="right-timer-text" class="timer-text">
+                                <p id="right-timer-text-p">00:00</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- board here -->    
+                <div id="game-board">
+                    <div id="game-board-grids"></div>
+                    <div id="game-board-tiles"></div>
+                    <!-- JS will generate elements here -->
+                </div>
+                <div id="bottom-panel">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Name of the creator of the page, copyright and last edited -->
+        <div id="footer-container">
+            <div id="footer-line"></div> 
+            <div id="footer">
+                <p>
+                    Copyrights reserved. 2021 &copy;<br>
+                </p>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/jimmychan999/GoBangGame">GitHub</a>
+            </div>
+        </div>
+    </div>
+        
+    <!-- scripts -->
+    <script type="text/javascript" src="../scripts/stopwatch.js"></script>
+    <script type="text/javascript" src="../scripts/main.js"></script>
+    <script type="text/javascript" src="../scripts/themeManager.js"></script>
+    <script type="text/javascript" src="../scripts/winLose.js"></script>
+    <script type="text/javascript" src="../scripts/boardManager.js"></script>
+    <script type="text/javascript" src="../scripts/audioManager.js"></script>
+</body>
+</html>

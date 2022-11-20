@@ -1,0 +1,36 @@
+:root {
+    --font: "Roboto Mono";
+    --bg-color: rgb(240, 240, 240);
+    --text-color: rgb(50, 50, 50);
+    
+    --nav-bar-bg-color: rgb(255, 255, 255);
+    /* --nav-bar-bg-color: rgb(241, 162, 87); */
+    --nav-menu-items-hover-bg-color: rgb(76, 76, 206);
+    --text-color-nav-menu-items-hover: rgb(255, 255, 255);
+    /* --text-color-nav-menu-items: rgb(255, 255, 255); */
+    --color-logo-text: rgb(80, 140, 245);
+    /* --color-logo-text: white; */
+
+    --color-footer-text: rgb(140, 140, 140);
+    --color-footer-bg: rgb(60, 60, 60);
+    --color-footer-line: rgba(0, 0, 0, 0.2);
+
+    --color-btn: rgb(80, 140, 245);
+    --color-btn-disabled: rgba(154, 169, 218, 0.493);
+    --color-btn-text: rgb(255, 255, 255);
+    --color-btn-hover: rgb(130, 170, 250);
+    --color-btn-text-disabled: rgba(255, 255, 255, 0.6);
+    
+    --input-bg-color: rgb(180, 180, 180);
+    --input-color: black;
+    --input-placeholder-color: rgb(120, 120, 120);
+
+    --color-board: rgb(250, 200, 140);
+    --color-board-line: rgb(165, 132, 113);
+    --color-stone-hover: rgba(190, 100, 100, 0.3);
+
+    --border-width-nav-bar: 0px;
+    --border-width-button: 0px;
+    --border-width-timer: 0px;
+    --input-border-width: 0px;
+}

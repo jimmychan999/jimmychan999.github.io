@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Go Bang</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" id="theme-switcher" href="../css/themes/light.css">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body onload="onLoadSettings()">
+    <div id="container">
+        <div id="nav-bar">
+            <!-- Navigation bar that follows the screen down, always showing-->
+            <div id="main-logo" onclick="goToMainMenu()">
+                <!-- <div id="logo" class="tile-div"></div> -->
+                <div id="logo-text">Go Bang</div>
+            </div>
+
+            <div id="nav-menu">
+                <div class="nav-menu-items">
+                    <a href="./index.html">Play</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./help.html">Help</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./settings.html">Settings</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./about.html">About</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="body">
+            <h2>Appearance</h2>
+            <div class="settings-items">
+                <div class="settings-items-name">
+                    <p>Theme:</p>
+                </div>
+                <div class="settings-items-options">
+                    <button id="btn-change-theme" onclick="changeTheme()">Change theme</button>
+                </div>
+            </div>
+            <div class="settings-items">
+                <div class="settings-items-name">
+                    <p>Mute(mute-icon):</p>
+                </div>
+                <div class="settings-items-options">
+                    <button id="btn-mute" onclick="onClickMuteButton()">Audio is enabled</button>
+                </div>
+            </div>
+            <div class="settings-items">
+                <div class="settings-items-name">
+                    <p>Board size:</p> 
+                </div>
+                <div class="settings-items-options">
+                    <div class="dropdown">
+                        <select id="board-size-dropdown" class="dropbtn" onchange="changeBoardSize(this.value)">
+                            <option value="15" selected disabled hidden></option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h2>Rules</h2>
+            <div class="settings-rule-item"></div>
+            <p>Upcoming: choose which rule or variant of Go Bang to use.</p>
+        </div>
+
+        <!-- Name of the creator of the page, copyright and last edited -->
+        <div id="footer-container">
+            <div id="footer-line"></div> 
+            <div id="footer">
+                <p>
+                    Copyrights reserved. 2021 &copy;<br>
+                </p>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/jimmychan999/GoBangGame">GitHub</a>
+            </div>
+        </div>
+    </div>
+        
+    <!-- scripts -->
+    <script type="text/javascript" src="../scripts/main.js"></script>
+    <script type="text/javascript" src="../scripts/themeManager.js"></script>
+    <script type="text/javascript" src="../scripts/boardManager.js"></script>
+    <script type="text/javascript" src="../scripts/audioManager.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Go Bang</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" id="theme-switcher" href="../css/themes/light.css">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body onload="onLoad()">
+    <div id="container">
+        <div id="nav-bar">
+            <!-- Navigation bar that follows the screen down, always showing-->
+            <div id="main-logo" onclick="goToMainMenu()">
+                <!-- <div id="logo" class="tile-div"></div> -->
+                <div id="logo-text">Go Bang</div>
+            </div>
+
+            <div id="nav-menu">
+                <div class="nav-menu-items">
+                    <a href="./index.html">Play</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./help.html">Help</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./settings.html">Settings</a>
+                </div>
+                <div class="nav-menu-items">
+                    <a href="./about.html">About</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="body">
+			<h1>About</h1>
+			<p>
+				Go Bang is a minimalistic game that was developed for
+                educational purposes by a small team of enthusiast. Made with
+                pure JavaScript, CSS and HTML, with minimal dependencies.
+				<br><br>
+                The code is open sourced (GitHub link at the bottom of the
+                page), so feel free to redistribute.
+			</p>
+			<h2>Future Plans</h2>
+			<p>
+				- Support for account system.<br>
+				- AI<br>
+				- More themes.<br>
+				- Port to mobile and desktop platforms.<br>
+			</p>
+        </div>
+
+        <!-- Name of the creator of the page, copyright and last edited -->
+        <div id="footer-container">
+            <div id="footer-line"></div> 
+            <div id="footer">
+                <p>
+                    Copyrights reserved. 2021 &copy;<br>
+                </p>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/jimmychan999/GoBangGame">GitHub</a>
+            </div>
+        </div>
+    </div>
+        
+    <!-- scripts -->
+    <script type="text/javascript" src="../scripts/main.js"></script>
+    <script type="text/javascript" src="../scripts/themeManager.js"></script>
+</body>
+</html>
